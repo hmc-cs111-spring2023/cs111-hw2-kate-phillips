@@ -21,7 +21,7 @@ In the Pavlus article, they include a quote from Andreas Stefik: "I think that w
 
 "In stead of designing a thing, you need to design a way of doing. And this way of doing must make some choices now but leave other choices to a later time." [Steele, 1998] This is definitely a perspective I want to remember. In theory, I agree that users should have control and voice during the design process - they are after all, the ones who are going to use it at the end. In practice, that feels really hard to do, but remembering this idea might help. It doesn't sound easier, but perhaps will ultimately be more useful and live longer than I do.
 
-ANOTHER QUOTE HERE
+"Obey the principle of least astonishment." [Bloch, 2006] I picked this quote because it's so simple. Name, define, and design things so that users aren't surprised. Make it predictable, or at least as predicable as possible so that there are less bugs, users are less confused, and so that users are less frustrated.
 
 **Question**
 
@@ -39,7 +39,9 @@ How might the themes of _Growing a Language_ relate to ideas from the Fowler rea
 
 **Response**
 
----
+More obviously, the idea of limited expressiveness that Fowler discusses is very related to _Growing a Language_ and the ways that Steele uses limited expressiveness to make his points. Of using only one syllable words, unless defined first, he says "in truth, the words of one syllable form quite a rich vocabulary, with which you can say many things." [Steele, 1995] He is able to use a small language and express many things quite fluently, or at least the bare minimum things that he needs - note that Steele doesn't define anything he doesn't use. Similarly, Fowler characterizes DSls with limited expressiveness, and that it doesn't have extraneous features, just what it needs to support its domain. [Fowler, 2010] 
+ 
+ NOT DONE
 
 **Question**
 
@@ -84,4 +86,6 @@ you do so? If not, why not?
 
 **Response**
 
----
+I think these two experiences are a bit at odds, but that doesn't erase the validity of either one. It is true that a more natural looking language is easier to read and initially parse, but as Cook says, it is still an artificial language. Part of my follow-up questions might be more related to what part of the process do we wish to streamline more - is the initial understanding like in the Pavlus article, or is it in the debugging stage later like what Cook found. 
+
+NOT DONE
