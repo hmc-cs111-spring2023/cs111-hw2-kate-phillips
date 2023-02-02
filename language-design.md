@@ -17,7 +17,11 @@ For each quote, describe what it was about the quote that led you pick it.
 
 **Response**
 
----
+In the Pavlus article, they include a quote from Andreas Stefik: "I think that whenever you make a product design simpler there’s a potential danger of removing features that experts need" [Pavlus, 2012]. This quote stood out to me because while I do beleive that it is a valid design concern, it could be read as in conversation with broader discussions about computing access and how knowing, or not knowing, specific languages are used as ways to gatekeep technical fields and communities. This is discussed a lot more in the Yang and Rabkin article about language stereotypes [Yang and Rabkin, 2015]. I wonder if when Stefik says a danger of "removing features that experts need" that it is also a future way for people to judge those who know Quorum as an "inferior" language as a veiled way to judge the programers themselves.
+
+"In stead of designing a thing, you need to design a way of doing. And this way of doing must make some choices now but leave other choices to a later time." [Steele, 1998] This is definitely a perspective I want to remember. In theory, I agree that users should have control and voice during the design process - they are after all, the ones who are going to use it at the end. In practice, that feels really hard to do, but remembering this idea might help. It doesn't sound easier, but perhaps will ultimately be more useful and live longer than I do.
+
+"Obey the principle of least astonishment." [Bloch, 2006] I picked this quote because it's so simple. Name, define, and design things so that users aren't surprised. Make it predictable, or at least as predicable as possible so that there are less bugs, users are less confused, and so that users are less frustrated. I'd want there to be excitement, and joy, but I personally hate the moments where I say "why is done like that" and would want to design something better for my users. Though, I suppose like my previous quote, it's probably easier said that done.
 
 **Question**
 
@@ -26,16 +30,16 @@ you know a poorly designed language? What are the symptoms?
 
 **Response**
 
----
+This is a bit of a tough question because what makes a language well or poorly designed sometimes depends on the metrics that we use. One can argue R is a well-designed language, but Tim Smith found it difficult to learn, and so disliked it even though he now regrets the tone he took in intitial criticisms. [Smith, 2016] Perl is very difficult to learn as well, and yet is still relevant today as a programming language. [Stefik _et al._, 2011] Therefore, metrics like ease-of-use for a novice programmer can be subjective and are one symptom of a language. That being said, I think there are some things I use when I try to figure out whether a language is well-designed or not. I definitely will judge it based on whether the rules feel consistent. Python, C++, and R all have different means and rules for assignments, but once you know the rules you can always assign something. Similarly, if it's consistent than I also feel like it's a little predictable - little syntax things I might have to look up, but I can follow what's happening in a program. A poorly designed language, I cannot.
+
 
 **Question**
 
-How might the themes of _Growing a Language_ relate to notions of fluency from last week's
-class?
+How might the themes of _Growing a Language_ relate to ideas from the Fowler reading?
 
 **Response**
 
----
+More obviously, the idea of limited expressiveness that Fowler discusses is very related to _Growing a Language_ and the ways that Steele uses limited expressiveness to make his points. Of using only one syllable words, unless defined first, he says "in truth, the words of one syllable form quite a rich vocabulary, with which you can say many things." [Steele, 1995] He is able to use a small language and express many things quite fluently, or at least the bare minimum things that he needs - note that Steele doesn't define anything he doesn't use. Similarly, Fowler characterizes DSls with limited expressiveness, and that it doesn't have extraneous features, just what it needs to support its domain. [Fowler, 2010] There are a few other design principles Fowler and Steele both highlight. First, the importance of user input. In Fowler, he talks about the benefits of DSLs as (and needing) communication with domain experts - they are the ones with the specific knowledge about how to make the DSL most helpful. [Fowler, 2010] This is echoed in Steele's discussion of building things as a bazaar, and gathering lots of helping hands and inputs. [Steele, 1995] That also builds into another point Fowler makes about improving development productivity. Both readings thematically are trying to improve an experience and the tools one uses, in order to also improve what someone can do with a programming language.
 
 **Question**
 
@@ -43,7 +47,7 @@ In what way is an API a language?
 
 **Response**
 
----
+An API a language because it is a set of rules for how programs can talk to each other. If a programming language is a set of rules for communicating with a computer to solve a problem, then using an API is the same, it's just a subset of rules presented in a different way. This is why the article on designing a good API is important, because it needs to be fluent and have overlapping principles with designing a general purpose language, like good names and documentation. [Bloch, 2006]
 
 **Question**
 
@@ -51,7 +55,7 @@ What does the post on grayscale tell us about the process of API design?
 
 **Response**
 
----
+It tells us that there are lots of ways to to name functions that do the same thing with the same result, and so user input is important in that process to make sure that most people find it intuitive. That being said, because there are so many "correct" ways to do things, and everyone has different ways of thinking about problems and different ideas (like how to quantify the color gray) that not everyone is going to be happy. I feel like it is following Bloch's ideas for good API design, because it's giving attention to the importance of names, getting input, and trying to be as least surprising as possible. [Bloch, 2006] Essentially, the API design process as modelled here is purposeful and public so that it is as intuitive and effectively designed as possible.
 
 **Question**
 
@@ -80,4 +84,4 @@ you do so? If not, why not?
 
 **Response**
 
----
+I think these two experiences are a bit at odds, but that doesn't erase the validity of either one. It is true that a more natural looking language is easier to read and initially parse, but as Cook says, it is still an artificial language. I might still choose to incorporate natural language into the design of a DSL because I think, as Pavlus argued, it can be easier to parse in the user's brain if there is more natural language for odd syntax. That being said, just because some things might resemble natural language or a more informal style like psuedo-code, I would be very careful with where and how I did that so that it still maintains the principles of good design that I've discussed in other questions, like predictability and consistency. For example, I wouldn't want to use a natural language word that has multiple meanings and uses, otherwise it might be confusing or non-intuitive what the case of the DSL would be.
